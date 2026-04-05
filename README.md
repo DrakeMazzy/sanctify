@@ -45,8 +45,13 @@ sanctify             # create release
 ### Homebrew (macOS / Linux)
 ```bash
 brew tap DrakeMazzy/tap
-brew install sanctify
+brew install --cask sanctify
 ```
+
+> **macOS note:** if the binary is blocked by Gatekeeper, run:
+> ```bash
+> xattr -d com.apple.quarantine $(brew --prefix)/bin/sanctify
+> ```
 
 ### Debian / Ubuntu
 ```bash

@@ -73,3 +73,6 @@ homebrew_casks:
     license: CC0-1.0
     binaries:
       - sanctify
+    caveats: |
+      On macOS, if the binary is blocked by Gatekeeper, run:
+        xattr -d com.apple.quarantine $(brew --prefix)/bin/sanctify
