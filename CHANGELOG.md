@@ -1,3 +1,8 @@
+## [0.1.2] - 2026-04-05
+
+### Maintenance
+- add issue templates, contributing guide, and improve README
+
 ## [0.1.1] - 2026-04-05
 
 ### Maintenance
