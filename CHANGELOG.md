@@ -1,3 +1,8 @@
+## [0.1.9] - 2026-04-05
+
+### Bug Fixes
+- add caveats for macOS Gatekeeper quarantine
+
 ## [0.1.8] - 2026-04-05
 
 ### Bug Fixes
