@@ -1,3 +1,8 @@
+## [0.1.5] - 2026-04-05
+
+### Maintenance
+- upgrade goreleaser-action to v7 for Node.js 24 support
+
 ## [0.1.4] - 2026-04-05
 
 ### Maintenance
