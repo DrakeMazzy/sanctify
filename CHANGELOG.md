@@ -1,3 +1,8 @@
+## [0.1.6] - 2026-04-05
+
+### Maintenance
+- migrate brews to homebrew_casks (GoReleaser v2.10+)
+
 ## [0.1.5] - 2026-04-05
 
 ### Maintenance
