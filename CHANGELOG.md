@@ -1,3 +1,8 @@
+## [0.1.3] - 2026-04-05
+
+### Maintenance
+- add deb and rpm package generation
+
 ## [0.1.2] - 2026-04-05
 
 ### Maintenance
