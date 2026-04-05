@@ -25,7 +25,7 @@ import (
 )
 
 // Version is the current version of Sanctify.
-const Version = "0.1.6"
+const Version = "0.1.7"
 
 const commitIterationLimit = 100
 

@@ -1,3 +1,8 @@
+## [0.1.7] - 2026-04-05
+
+### Maintenance
+- update installation section with Homebrew, deb, and rpm
+
 ## [0.1.6] - 2026-04-05
 
 ### Maintenance
