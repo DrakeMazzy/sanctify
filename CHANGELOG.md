@@ -1,3 +1,8 @@
+## [0.1.4] - 2026-04-05
+
+### Maintenance
+- add Homebrew tap and use GH_PAT for releases
+
 ## [0.1.3] - 2026-04-05
 
 ### Maintenance
