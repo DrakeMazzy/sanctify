@@ -71,7 +71,5 @@ homebrew_casks:
     homepage: https://github.com/DrakeMazzy/sanctify
     description: Automated semantic versioning and release tool
     license: CC0-1.0
-    install: |
-      bin.install "sanctify"
-    test: |
-      system bin/"sanctify", "--version"
+    binaries:
+      - sanctify
