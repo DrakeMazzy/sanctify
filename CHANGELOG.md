@@ -1,3 +1,8 @@
+## [0.1.8] - 2026-04-05
+
+### Bug Fixes
+- use binaries field in homebrew_casks config
+
 ## [0.1.7] - 2026-04-05
 
 ### Maintenance
