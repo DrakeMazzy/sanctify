@@ -1,0 +1,39 @@
+name: Auto Tag
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  tag:
+    # Skip if the commit message contains [skip ci] or was made by the bot
+    if: "!startsWith(github.event.head_commit.message, 'chore(release):')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          # Using GH_PAT allows triggering other workflows (like Release)
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Set up Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: '1.26'
+
+      - name: Run Sanctify
+        run: |
+          # Configure Git user for the commit
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Run sanctify
+          go run main.go
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
