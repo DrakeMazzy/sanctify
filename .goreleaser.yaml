@@ -52,3 +52,13 @@ release:
   github:
     owner: DrakeMazzy
     name: sanctify
+
+nfpms:
+  - package_name: sanctify
+    homepage: https://github.com/DrakeMazzy/sanctify
+    maintainer: DrakeMazzy <6117149+DrakeMazzy@users.noreply.github.com>
+    description: Automated semantic versioning and release tool
+    license: CC0-1.0
+    formats:
+      - deb
+      - rpm
