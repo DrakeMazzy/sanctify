@@ -63,7 +63,7 @@ nfpms:
       - deb
       - rpm
 
-brews:
+homebrew_casks:
   - repository:
       owner: DrakeMazzy
       name: homebrew-tap
