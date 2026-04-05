@@ -1,5 +1,10 @@
 # Sanctify
 
+[![Go CI](https://github.com/DrakeMazzy/sanctify/actions/workflows/ci.yml/badge.svg)](https://github.com/DrakeMazzy/sanctify/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/DrakeMazzy/sanctify)](https://github.com/DrakeMazzy/sanctify/releases/latest)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/DrakeMazzy/sanctify)](go.mod)
+[![License](https://img.shields.io/github/license/DrakeMazzy/sanctify)](LICENSE)
+
 Sanctify is a minimalist Go-based tool for automating versioning, changelog generation, and software releases. It automates tagging, updates version metadata in configuration files, and pushes changes to a remote Git repository.
 
 ## Features
