@@ -7,7 +7,19 @@
 
 Sanctify is a minimalist Go-based tool for automating versioning, changelog generation, and software releases. It automates tagging, updates version metadata in configuration files, and pushes changes to a remote Git repository.
 
-## Features
+## ⚡ Quick Start
+
+```bash
+# Install
+go install github.com/DrakeMazzy/sanctify@latest
+
+# Run in your git repository
+cd your-project
+sanctify --dry-run   # preview the next version
+sanctify             # create release
+```
+
+## 📦 Features
 
 1.  **Automated Versioning**: Calculates the next semantic version based on commit messages using strict **Conventional Commits v1.0.0** parsing (including Scopes, Breaking indicators `!`, and Footers).
 2.  **Context-Aware Releases**: Supports different branch strategies:
@@ -28,7 +40,7 @@ Sanctify is a minimalist Go-based tool for automating versioning, changelog gene
 5.  **CI/CD Support**: Detects PR numbers from GitHub, GitLab, Bitbucket, and Jenkins.
 6.  **Safety**: Displays help when run without parameters and works correctly outside of Git repositories (using default values).
 
-## Installation
+## 🔧 Installation
 
 ### 1. Direct Download (Recommended)
 Download the latest pre-compiled binary for your platform from the [GitHub Releases](https://github.com/DrakeMazzy/sanctify/releases) page.
@@ -45,7 +57,7 @@ cd sanctify
 go build -o sanctify main.go
 ```
 
-## Usage
+## 🚀 Usage
 
 ### Running
 ```bash
@@ -71,7 +83,7 @@ sanctify --tag-branch production,release
 sanctify 1.2.3
 ```
 
-## CI/CD Examples
+## 🔌 CI/CD Examples
 
 ### GitHub Actions
 ```yaml
@@ -121,14 +133,14 @@ pipelines:
             BITBUCKET_TOKEN: $BITBUCKET_ACCESS_TOKEN # Repository Access Token
 ```
 
-## Architecture & Technologies
+## 🏗️ Architecture & Technologies
 
 - **Language**: Go 1.26.1+
 - **Libraries**: `go-git/v5`, `Masterminds/semver/v3`.
 - **License**: **CC0 1.0 Universal** (Public Domain).
 - **CI/CD**: GitHub Actions for testing and GoReleaser for automated releases.
 
-## Development Conventions
+## 📝 Development Conventions
 
 - **Conventional Commits**: Follow the specification. Use `feat`, `fix`, `perf`, `docs`, `test`, `ci`, `chore`, `refactor`, `build`, `style`, `revert`.
 - **Breaking Changes**: Use `!` in the header or `BREAKING CHANGE:` in the footer.
