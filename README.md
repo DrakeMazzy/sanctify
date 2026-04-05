@@ -42,15 +42,35 @@ sanctify             # create release
 
 ## 🔧 Installation
 
-### 1. Direct Download (Recommended)
-Download the latest pre-compiled binary for your platform from the [GitHub Releases](https://github.com/DrakeMazzy/sanctify/releases) page.
+### Homebrew (macOS / Linux)
+```bash
+brew tap DrakeMazzy/tap
+brew install sanctify
+```
 
-### 2. Using Go Install
+### Debian / Ubuntu
+```bash
+# Download the latest .deb from GitHub Releases
+curl -LO https://github.com/DrakeMazzy/sanctify/releases/latest/download/sanctify_$(curl -s https://api.github.com/repos/DrakeMazzy/sanctify/releases/latest | grep tag_name | cut -d'"' -f4 | tr -d v)_linux_amd64.deb
+sudo dpkg -i sanctify_*.deb
+```
+
+### RPM (Fedora / RHEL / CentOS)
+```bash
+# Download the latest .rpm from GitHub Releases
+curl -LO https://github.com/DrakeMazzy/sanctify/releases/latest/download/sanctify_$(curl -s https://api.github.com/repos/DrakeMazzy/sanctify/releases/latest | grep tag_name | cut -d'"' -f4 | tr -d v)_linux_amd64.rpm
+sudo rpm -i sanctify_*.rpm
+```
+
+### Go Install
 ```bash
 go install github.com/DrakeMazzy/sanctify@latest
 ```
 
-### 3. Manual Build
+### Direct Download
+Download the latest pre-compiled binary for your platform from the [GitHub Releases](https://github.com/DrakeMazzy/sanctify/releases) page.
+
+### Manual Build
 ```bash
 git clone https://github.com/DrakeMazzy/sanctify.git
 cd sanctify
